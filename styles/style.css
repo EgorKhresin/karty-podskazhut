@@ -21,10 +21,10 @@ figure {
   margin: 0;
 }
 
-button, a {
+button,
+a {
   outline: none;
 }
-
 
 .page {
   --bg-color: #f3efec;
@@ -39,7 +39,7 @@ button, a {
 
 .theme_dark {
   --bg-color: #171717;
-  --text-color: #B3B3B3;
+  --text-color: #b3b3b3;
   --accent-color: transparent;
 }
 
@@ -63,9 +63,8 @@ button, a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-block: 20px;
   border-block: var(--text-color) solid 1px;
-
+  padding-block: 20px;
 }
 
 .header__logo {
@@ -73,24 +72,24 @@ button, a {
 }
 
 .header__theme-toggler {
-  align-self: center;
   display: flex;
   flex-direction: row;
   gap: 20px;
+  align-self: center;
   padding: 0;
 }
 
 .header__theme-button {
-  appearance: none;
-  background-color: transparent;
   border: none;
-  cursor: pointer;
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  color: var(--text-color);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 104%;
   padding: 0;
+  color: var(--text-color);
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 104%;
+  background-color: transparent;
+  cursor: pointer;
+  appearance: none;
 }
 
 .header__theme-button:focus-visible {
@@ -102,20 +101,19 @@ button, a {
 }
 
 .header__theme-button_is-active:disabled {
-  font-weight: 700;
   position: relative;
+  font-weight: 700;
   pointer-events: none;
-  
 }
 
-.header__theme-button_is-active::after{
-  display: inline-block;
+.header__theme-button_is-active::after {
   content: '';
-  z-index: -1;
   position: absolute;
+  z-index: -1;
+  display: inline-block;
+  background-color: var(--accent-color);
   inset-inline-start: -2px;
   inset-block-start: 13px;
-  background-color: var(--accent-color);
   inline-size: 81px;
   block-size: 0.25em;
 }
@@ -145,7 +143,8 @@ button, a {
   margin-block-end: 1.5em;
 }
 
-.content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
+.content__text-block_type_first-lettered
+  .content__paragraph:first-child::first-letter {
   display: inline-block;
   margin-inline-end: 4px;
   padding: 0 4px;
@@ -154,7 +153,9 @@ button, a {
   background-color: var(--accent-color);
 }
 
-.theme_dark .content__text-block_type_first-lettered .content__paragraph:first-child::first-letter {
+.theme_dark
+  .content__text-block_type_first-lettered
+  .content__paragraph:first-child::first-letter {
   border: var(--text-color) solid 1px;
 }
 
@@ -204,12 +205,12 @@ li::before {
 }
 
 .content__picture-caption {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
-  padding-block: 20px;
   border-block-end: var(--text-color) solid 1px;
+  padding-block: 20px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
 }
 
 .content__picture {
@@ -221,14 +222,13 @@ li::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  block-size: calc((100vw - 5vw * 2) / 4 * 3);
   margin-block-start: 7vw;
   border: var(--text-color) solid 1px;
+  aspect-ratio: 4/3;
 }
 
 .content__card-title {
   font-size: 60px;
-
 }
 
 .colored-text {
@@ -236,13 +236,13 @@ li::before {
 }
 
 .colored-text::after {
-  display: inline-block;
   content: '';
-  z-index: -1;
   position: absolute;
+  z-index: -1;
+  display: inline-block;
+  background-color: var(--accent-color);
   inset-inline-start: -2px;
   inset-block-start: 35px;
-  background-color: var(--accent-color);
   inline-size: 220px;
   block-size: 0.25em;
 }
@@ -251,11 +251,10 @@ li::before {
   background-image: url(../images/pattern.svg);
 }
 
-
 .content__card-subtitle {
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 18px;
   font-weight: 400;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -266,9 +265,9 @@ li::before {
 }
 
 .footer__copyright {
-  font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 400;
   color: var(--text-color);
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   text-align: center;
 }
