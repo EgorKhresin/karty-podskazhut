@@ -21,14 +21,18 @@
           </svg>
         </div>
         <ul class="header__theme-toggler">
-          <button class="header__theme-button header__theme-button_type_dark">
-            Тёмная
-          </button>
-          <button
-            class="header__theme-button header__theme-button_type_light header__theme-button_is-active"
-          >
-            Светлая
-          </button>
+          <li>
+            <button class="header__theme-button header__theme-button_type_dark">
+              Тёмная
+            </button>
+          </li>
+          <li>
+            <button
+              class="header__theme-button header__theme-button_type_light header__theme-button_is-active"
+            >
+              Светлая
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
@@ -62,14 +66,17 @@
       </div>
       <figure class="content__figure">
         <picture>
-          <source srcset="./images/cards-2x.avif" type="image/avif" />
-          <source srcset="./images/cards-1x.avif" type="image/avif" />
-          <source srcset="./images/cards-2x.webp" type="image/webp" />
-          <source srcset="./images/cards-1x.webp" type="image/webp" />
-          <source srcset="./images/cards-2x.png" type="image/png" />
+          <source
+            srcset="./images/cards-2x.avif 2x, ./images/cards-1x.avif 1x"
+            type="image/avif"
+          />
+          <source
+            srcset="./images/cards-2x.webp 2x, ./images/cards-1x.webp 1x"
+            type="image/webp"
+          />
           <img
             class="content__picture"
-            src="./images/cards-1x.png"
+            srcset="./images/cards-2x.png 2x, ./images/cards-1x.png 1x"
             alt="Фотография стола, вид сверху. На столе лежит блокнот, на нём телефон и ручка, рядом коробка из под карт, карта с надписью «Trust in the you of now», выше стоит цветок в горшке"
             loading="lazy"
           />
@@ -121,12 +128,12 @@
             target="_blank"
             >веб-сайты</a
           >
-          с диджитал-эквивалентами карточек и приложения для
+          с диджитал-эквивалентами карточек и приложения
           <a
             class="paragraph-link"
             href="https://apps.apple.com/us/app/oblique-strategies-se/id1104927011"
             target="_blank"
-            >iOS</a
+            >для iOS</a
           >
           и
           <a
