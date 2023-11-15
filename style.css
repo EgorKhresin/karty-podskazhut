@@ -48,7 +48,7 @@ a:focus-visible {
 }
 
 .header {
-  padding-block-start: 10vi;
+  padding-block-start: 10%;
 }
 
 .heading {
@@ -125,12 +125,18 @@ a:focus-visible {
 }
 
 .content-section {
-  padding-inline: 5vi;
+  padding-inline: 4.35vi;
+}
+
+@media (width <= 450px) {
+  .content-section {
+    padding-inline: 5.1vi;
+  }
 }
 
 .content__title {
-  margin-block-start: 7vi;
-  margin-block-end: 2.5vi;
+  margin-block-start: 7%;
+  margin-block-end: 2.5%;
   font-size: 30px;
 }
 
@@ -200,9 +206,9 @@ a:focus-visible {
 
 .content__figure {
   position: relative;
-  margin-block: 7vi;
+  margin-block: 7%;
   inline-size: calc(100% + 5vi * 2);
-  inset-inline-end: 5vw;
+  inset-inline-end: 5%;
 }
 
 .content__picture-caption {
@@ -223,7 +229,7 @@ a:focus-visible {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-block-start: 7vi;
+  margin-block-start: 7%;
   border: currentColor solid 1px;
   aspect-ratio: 4/3;
 }
@@ -260,7 +266,7 @@ a:focus-visible {
 }
 
 .footer {
-  margin-block-start: 10vi;
+  margin-block-start: 10%;
   border-block-start: currentColor solid 1px;
   padding: 2.5%;
 }
